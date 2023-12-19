@@ -3,10 +3,18 @@
     --horizontal-space: 3rem;
 }
 
+@font-face {
+    font-family: "Hack";
+    src: url("../fonts/hack/");
+}
+
 body {
+    font-family: 'Hack', monospace;
     font-size: 18px;
     line-height: 1.5;
-    font-family: Consolas;
+    background-color: #E9EEF170;
+    color: #262621;
+    text-shadow: 0 0 10px #26262179;
 }
 
 body#aboutPage img {
@@ -15,11 +23,12 @@ body#aboutPage img {
 
 body#portfolioPage img {
     border-radius: 2%;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 0 0 20px #26262179;
 }
 
 h1, h2, h3 {
     line-height: 1.2;
+    font-family: 'Hack', monospace;
 }
 
 p {
@@ -90,6 +99,19 @@ body#portfolioPage ul#portfolioItems {
     padding: 0;
 }
 
+body#portfolioPage ul#portfolioItems li h2:hover, body > nav ul li:hover {
+    transform-origin: bottom left;
+    transform: scale(1.1);
+}
+
+a:link, a:visited {
+    color: black;
+}
+
+a:hover {
+    color: #f54545;
+}
+
 @media screen and (min-width: 25em) {
     body#portfolioPage ul#portfolioItems li {
         flex-basis: 48%;
@@ -100,3 +122,4 @@ body#portfolioPage ul#portfolioItems {
 body#portfolioPage ul#portfolioItems li img {
     max-width: 100%;
 }
+
