@@ -13,6 +13,7 @@ body {
     font-size: 18px;
     line-height: 1.5;
     background-color: #E9EEF170;
+    background-image: url("../images/textures/axiom-pattern.png");
     color: #262621;
     text-shadow: 0 0 10px #26262179;
 }
