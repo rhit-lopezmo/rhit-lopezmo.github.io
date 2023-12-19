@@ -1,6 +1,11 @@
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
+    --main-text-color: #262621;
+    --main-text-shadow: 0 0 10px #26262179;
+    --main-background-color: #E9EEF170;
+    --main-box-shadow: 0 0 20px #26262179;
+    --link-hover-color: #f54545;
 }
 
 @font-face {
@@ -12,10 +17,10 @@ body {
     font-family: 'Hack', monospace;
     font-size: 18px;
     line-height: 1.5;
-    background-color: #E9EEF170;
+    background-color: var(--main-background-color);
     background-image: url("../images/textures/axiom-pattern.png");
-    color: #262621;
-    text-shadow: 0 0 10px #26262179;
+    color: var(--main-text-color);
+    text-shadow: var(--main-text-shadow);
 }
 
 body#aboutPage img {
@@ -24,7 +29,7 @@ body#aboutPage img {
 
 body#portfolioPage img {
     border-radius: 2%;
-    box-shadow: 0 0 20px #26262179;
+    box-shadow: var(--main-box-shadow);
 }
 
 h1, h2, h3 {
@@ -105,12 +110,12 @@ body#portfolioPage ul#portfolioItems li h2:hover, body > nav ul li:hover {
     transform: scale(1.1);
 }
 
-a:link, a:visited {
+a, a:visited {
     color: black;
 }
 
 a:hover {
-    color: #f54545;
+    color: var(--link-hover-color)
 }
 
 @media screen and (min-width: 25em) {
